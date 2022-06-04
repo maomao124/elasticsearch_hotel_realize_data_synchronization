@@ -1,0 +1,11 @@
+2022-06-04 18:37:07.285  INFO 9756 --- [main] m.e.hotel.HotelDocumentTest              : Starting HotelDocumentTest using Java 16.0.2 on mao with PID 9756 (started by mao in H:\程序\大三下期\elasticsearch_hotel实现数据同步)
+2022-06-04 18:37:07.287 DEBUG 9756 --- [main] m.e.hotel.HotelDocumentTest              : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-04 18:37:07.287  INFO 9756 --- [main] m.e.hotel.HotelDocumentTest              : The following 1 profile is active: "dev"
+2022-06-04 18:37:08.479  INFO 9756 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-04 18:37:08.818  INFO 9756 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-04 18:37:10.871  INFO 9756 --- [main] m.e.hotel.HotelDocumentTest              : Started HotelDocumentTest in 4.02 seconds (JVM running for 5.559)
+2022-06-04 18:37:11.887 DEBUG 9756 --- [main] m.e.mapper.HotelMapper.selectById        : ==>  Preparing: SELECT id,name,address,price,score,brand,city,star_name,business,longitude,latitude,pic FROM tb_hotel WHERE id=?
+2022-06-04 18:37:11.921 DEBUG 9756 --- [main] m.e.mapper.HotelMapper.selectById        : ==> Parameters: 61083(Long)
+2022-06-04 18:37:11.955 DEBUG 9756 --- [main] m.e.mapper.HotelMapper.selectById        : <==      Total: 1
+2022-06-04 18:37:12.287  INFO 9756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-04 18:37:12.292  INFO 9756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
