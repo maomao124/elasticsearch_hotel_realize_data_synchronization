@@ -53,6 +53,12 @@ public class HotelController
         return hotelService.getSuggestions(prefix);
     }
 
+    /**
+     * 聚合
+     *
+     * @param params RequestParams
+     * @return Map<String, List < String>>
+     */
     @PostMapping("filters")
     public Map<String, List<String>> getFilters(@RequestBody RequestParams params)
     {

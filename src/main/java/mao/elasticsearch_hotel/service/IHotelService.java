@@ -54,5 +54,11 @@ public interface IHotelService extends IService<Hotel>
      */
     void deleteElasticSearchHotelById(Long id);
 
+    /**
+     * 聚合
+     *
+     * @param params RequestParams
+     * @return Map<String, List < String>>
+     */
     Map<String, List<String>> getFilters(RequestParams params);
 }
