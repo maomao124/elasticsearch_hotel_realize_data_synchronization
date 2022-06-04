@@ -9,3 +9,25 @@
 2022-06-04 18:37:11.955 DEBUG 9756 --- [main] m.e.mapper.HotelMapper.selectById        : <==      Total: 1
 2022-06-04 18:37:12.287  INFO 9756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2022-06-04 18:37:12.292  INFO 9756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-04 19:15:23.220  INFO 16620 --- [main] m.e.hotel.HotelDocumentTest              : Starting HotelDocumentTest using Java 16.0.2 on mao with PID 16620 (started by mao in H:\程序\大三下期\elasticsearch_hotel实现数据同步)
+2022-06-04 19:15:23.221 DEBUG 16620 --- [main] m.e.hotel.HotelDocumentTest              : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-04 19:15:23.222  INFO 16620 --- [main] m.e.hotel.HotelDocumentTest              : The following 1 profile is active: "dev"
+2022-06-04 19:15:24.469  INFO 16620 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-04 19:15:24.716  INFO 16620 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-04 19:15:26.766  INFO 16620 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-06-04 19:15:26.867  INFO 16620 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#68821f6:0/SimpleConnection@22429a11 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62976]
+2022-06-04 19:15:26.873  INFO 16620 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (hotel.exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-06-04 19:15:26.873  INFO 16620 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.insert.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 19:15:26.873  INFO 16620 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.delete.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 19:15:27.016  INFO 16620 --- [main] m.e.hotel.HotelDocumentTest              : Started HotelDocumentTest in 4.186 seconds (JVM running for 5.341)
+2022-06-04 19:15:27.772 DEBUG 16620 --- [main] m.e.mapper.HotelMapper.selectById        : ==>  Preparing: SELECT id,name,address,price,score,brand,city,star_name,business,longitude,latitude,pic FROM tb_hotel WHERE id=?
+2022-06-04 19:15:27.799 DEBUG 16620 --- [main] m.e.mapper.HotelMapper.selectById        : ==> Parameters: 61083(Long)
+2022-06-04 19:15:27.831 DEBUG 16620 --- [main] m.e.mapper.HotelMapper.selectById        : <==      Total: 1
+2022-06-04 19:15:28.067  INFO 16620 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-06-04 19:15:28.068  INFO 16620 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-06-04 19:15:29.005  INFO 16620 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-06-04 19:15:29.019  INFO 16620 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-06-04 19:15:29.022  INFO 16620 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-06-04 19:15:29.023  INFO 16620 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-06-04 19:15:29.039  INFO 16620 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-04 19:15:29.043  INFO 16620 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
