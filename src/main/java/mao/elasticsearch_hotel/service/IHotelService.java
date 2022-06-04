@@ -6,6 +6,7 @@ import mao.elasticsearch_hotel.entity.PageResult;
 import mao.elasticsearch_hotel.entity.RequestParams;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Project name(项目名称)：elasticsearch_hotel
@@ -52,4 +53,6 @@ public interface IHotelService extends IService<Hotel>
      * @param id id
      */
     void deleteElasticSearchHotelById(Long id);
+
+    Map<String, List<String>> getFilters(RequestParams params);
 }

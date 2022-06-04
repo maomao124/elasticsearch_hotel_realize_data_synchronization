@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Project name(项目名称)：elasticsearch_hotel
@@ -50,5 +51,11 @@ public class HotelController
     public List<String> getSuggestions(@RequestParam("key") String prefix)
     {
         return hotelService.getSuggestions(prefix);
+    }
+
+    @PostMapping("filters")
+    public Map<String, List<String>> getFilters(@RequestBody RequestParams params)
+    {
+        return hotelService.getFilters(params);
     }
 }
