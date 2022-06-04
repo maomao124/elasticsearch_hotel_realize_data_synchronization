@@ -10,6 +10,10 @@ import mao.elasticsearch_hotel.entity.PageResult;
 import mao.elasticsearch_hotel.entity.RequestParams;
 import mao.elasticsearch_hotel.mapper.HotelMapper;
 import mao.elasticsearch_hotel.service.IHotelService;
+import org.elasticsearch.action.delete.DeleteRequest;
+import org.elasticsearch.action.delete.DeleteResponse;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
@@ -30,6 +34,7 @@ import org.elasticsearch.search.suggest.Suggest;
 import org.elasticsearch.search.suggest.SuggestBuilder;
 import org.elasticsearch.search.suggest.SuggestBuilders;
 import org.elasticsearch.search.suggest.completion.CompletionSuggestion;
+import org.elasticsearch.xcontent.XContentType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -278,12 +283,79 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
     @Override
     public void insertElasticSearchHotelById(Long id)
     {
+        try
+        {
+            log.debug("开始添加或者更新ElasticSearch文档：" + id);
+            //查询数据库
+            Hotel hotel = this.getById(id);
+            //判断结果是否为空
+            if (hotel == null || hotel.getId() == null)
+            {
+                //数据库里查不到，无法插入或者更新
+                log.warn("数据库里id为" + id + "的数据不存在，无法添加或者更新ElasticSearch");
+                return;
+            }
+            //数据库里存在
+            //转文档类型
+            HotelDoc hotelDoc = new HotelDoc(hotel);
+            //构建请求
+            IndexRequest indexRequest = new IndexRequest("hotel");
+            //设置id
+            indexRequest.id(hotel.getId().toString());
+            //转json
+            String json = JSON.toJSONString(hotelDoc);
+            //构建请求体
+            indexRequest.source(json, XContentType.JSON);
+            //发起请求
+            IndexResponse indexResponse = restHighLevelClient.index(indexRequest, RequestOptions.DEFAULT);
+            log.debug("添加或者更新ElasticSearch文档成功：" + id);
+        }
+        catch (Exception e)
+        {
+            //判断是否成功
+            if (e.getMessage().contains("response=HTTP/1.1 200 OK}"))
+            {
+                log.debug("添加或者更新ElasticSearch文档成功：" + id);
+            }
+            else
+            {
+                log.warn("添加或者更新ElasticSearch文档失败：" + id);
+                //抛出
+                throw new RuntimeException(e);
+            }
+        }
+
 
     }
 
     @Override
     public void deleteElasticSearchHotelById(Long id)
     {
+        try
+        {
+            log.debug("开始删除ElasticSearch文档：" + id);
+            //构建请求
+            DeleteRequest deleteRequest = new DeleteRequest("hotel");
+            //设置id
+            deleteRequest.id(id.toString());
+            //发起请求
+            DeleteResponse deleteResponse = restHighLevelClient.delete(deleteRequest, RequestOptions.DEFAULT);
+            log.debug("删除ElasticSearch文档成功：" + id);
+        }
+        catch (Exception e)
+        {
+            //判断是否成功
+            if (e.getMessage().contains("response=HTTP/1.1 200 OK}"))
+            {
+                log.debug("删除ElasticSearch文档成功：" + id);
+            }
+            else
+            {
+                log.warn("删除ElasticSearch文档失败：" + id);
+                //抛出
+                throw new RuntimeException(e);
+            }
+        }
 
     }
 }
