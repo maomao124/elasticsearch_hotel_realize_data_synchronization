@@ -1,0 +1,18 @@
+2022-06-04 20:24:42.253  INFO 20488 --- [main] telRealizeDataSynchronizationApplication : Starting ElasticsearchHotelRealizeDataSynchronizationApplication v0.0.1-SNAPSHOT using Java 16.0.2 on mao with PID 20488 (H:\程序\大三下期\elasticsearch_hotel实现数据同步\target\elasticsearch_hotel-0.0.1-SNAPSHOT.jar started by mao in H:\程序\大三下期\elasticsearch_hotel实现数据同步\target)
+2022-06-04 20:24:42.257 DEBUG 20488 --- [main] telRealizeDataSynchronizationApplication : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-04 20:24:42.257  INFO 20488 --- [main] telRealizeDataSynchronizationApplication : The following 1 profile is active: "dev"
+2022-06-04 20:24:43.813  INFO 20488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-06-04 20:24:43.826  INFO 20488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-04 20:24:43.826  INFO 20488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-04 20:24:43.905  INFO 20488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-04 20:24:43.906  INFO 20488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1588 ms
+2022-06-04 20:24:44.021  INFO 20488 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-04 20:24:44.242  INFO 20488 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-04 20:24:45.436  INFO 20488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-04 20:24:45.951  INFO 20488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-06-04 20:24:45.955  INFO 20488 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-06-04 20:24:46.039  INFO 20488 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#ea9e141:0/SimpleConnection@3f1ddac2 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 63407]
+2022-06-04 20:24:46.047  INFO 20488 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (hotel.exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-06-04 20:24:46.047  INFO 20488 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.insert.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:24:46.048  INFO 20488 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.delete.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:24:46.152  INFO 20488 --- [main] telRealizeDataSynchronizationApplication : Started ElasticsearchHotelRealizeDataSynchronizationApplication in 4.609 seconds (JVM running for 5.182)
