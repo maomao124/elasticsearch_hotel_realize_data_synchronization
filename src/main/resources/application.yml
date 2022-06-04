@@ -9,8 +9,9 @@ spring:
 #-----通用环境---------------------------------------------------------
 
   # 导入jdbc.properties文件
+      # 导入rabbitMQ配置文件
   config:
-    import: classpath:jdbc.properties
+    import: classpath:jdbc.properties,rabbitmq.properties
 
 
   #spring-mvc配置
@@ -73,19 +74,17 @@ spring:
 
 
 
-#    # 导入rabbitMQ配置文件
-#    import: rabbitmq.properties
-#
-#  #关于rabbitMQ
-#  rabbitmq:
-#    host: ${rabbitmq.host} # 127.0.0.1
-#    port: ${rabbitmq.port} # 5672
-#    username: ${rabbitmq.username} # admin
-#    password: ${rabbitmq.password} # 123456
-#    # 发布确认类型
-#    publisher-confirm-type: correlated
-#    # 不可路由时返回
-#    publisher-returns: true
+
+  #关于rabbitMQ
+  rabbitmq:
+    host: ${rabbitmq.host} # 127.0.0.1
+    port: ${rabbitmq.port} # 5672
+    username: ${rabbitmq.username} # admin
+    password: ${rabbitmq.password} # 123456
+    # 发布确认类型
+    publisher-confirm-type: correlated
+    # 不可路由时返回
+    publisher-returns: true
 
 
 

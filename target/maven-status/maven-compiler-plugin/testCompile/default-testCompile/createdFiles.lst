@@ -1,0 +1,6 @@
+mao\elasticsearch_hotel\hotel\HotelSearchTest.class
+mao\elasticsearch_hotel\impl\HotelServiceImplTest.class
+mao\elasticsearch_hotel\hotel\HotelDocumentTest.class
+mao\elasticsearch_hotel\mapper\HotelMapperTest.class
+mao\elasticsearch_hotel\ElasticsearchHotelRealizeDataSynchronizationApplicationTests.class
+mao\elasticsearch_hotel\hotel\HotelIndexTest.class

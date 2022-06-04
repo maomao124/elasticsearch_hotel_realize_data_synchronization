@@ -1,0 +1,14 @@
+mao\elasticsearch_hotel\entity\HotelDoc.class
+mao\elasticsearch_hotel\config\ElasticSearchConfig.class
+mao\elasticsearch_hotel\constants\HotelConstants.class
+mao\elasticsearch_hotel\ElasticsearchHotelRealizeDataSynchronizationApplication.class
+mao\elasticsearch_hotel\service\IHotelService.class
+mao\elasticsearch_hotel\listener\HotelListener.class
+mao\elasticsearch_hotel\mapper\HotelMapper.class
+mao\elasticsearch_hotel\controller\HotelController.class
+mao\elasticsearch_hotel\entity\RequestParams.class
+mao\elasticsearch_hotel\config\RabbitMQConfig.class
+mao\elasticsearch_hotel\service\impl\HotelServiceImpl.class
+mao\elasticsearch_hotel\constants\RabbitMQConstants.class
+mao\elasticsearch_hotel\entity\Hotel.class
+mao\elasticsearch_hotel\entity\PageResult.class
