@@ -1,0 +1,153 @@
+2022-06-04 20:04:45.476  INFO 2476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-04 20:04:45.558  INFO 2476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-04 20:04:45.559  INFO 2476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 971 ms
+2022-06-04 20:04:45.629  INFO 2476 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-04 20:04:45.736  INFO 2476 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-04 20:04:46.324  INFO 2476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-04 20:04:46.564  INFO 2476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-04 20:04:46.642  INFO 2476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-06-04 20:04:46.644  INFO 2476 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-06-04 20:04:46.662  INFO 2476 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4c7edbeb:0/SimpleConnection@3e95e209 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50632]
+2022-06-04 20:04:46.665  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (hotel.exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-06-04 20:04:46.666  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.insert.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:04:46.666  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.delete.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:04:46.706  INFO 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : Started ElasticsearchHotelRealizeDataSynchronizationApplication in 2.535 seconds (JVM running for 3.15)
+2022-06-04 20:16:23.139  INFO 2476 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-04 20:16:23.139  INFO 2476 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-04 20:16:23.140  INFO 2476 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-04 20:16:39.025  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-06-04 20:16:39.027  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-06-04 20:16:39.354  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-06-04 20:16:39.367  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-06-04 20:16:39.389  INFO 2476 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-06-04 20:16:39.389  INFO 2476 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-06-04 20:16:39.395  INFO 2476 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-04 20:16:39.396  INFO 2476 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-04 20:16:39.489  INFO 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : Starting ElasticsearchHotelRealizeDataSynchronizationApplication using Java 16.0.2 on mao with PID 2476 (H:\程序\大三下期\elasticsearch_hotel实现数据同步\target\classes started by mao in H:\程序\大三下期\elasticsearch_hotel实现数据同步)
+2022-06-04 20:16:39.490 DEBUG 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-04 20:16:39.490  INFO 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : The following 1 profile is active: "dev"
+2022-06-04 20:16:39.713  INFO 2476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-06-04 20:16:39.714  INFO 2476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-04 20:16:39.714  INFO 2476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-04 20:16:39.738  INFO 2476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-04 20:16:39.738  INFO 2476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 246 ms
+2022-06-04 20:16:39.754  INFO 2476 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-04 20:16:39.785  INFO 2476 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-06-04 20:16:39.910  INFO 2476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-04 20:16:39.983  INFO 2476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-04 20:16:40.011  INFO 2476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-06-04 20:16:40.012  INFO 2476 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-06-04 20:16:40.020  INFO 2476 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3fc3da7b:0/SimpleConnection@78aa0899 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62325]
+2022-06-04 20:16:40.021  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (hotel.exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-06-04 20:16:40.021  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.insert.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:16:40.021  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.delete.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:16:40.031  INFO 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : Started ElasticsearchHotelRealizeDataSynchronizationApplication in 0.58 seconds (JVM running for 716.475)
+2022-06-04 20:16:40.033  INFO 2476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-04 20:16:41.427  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-06-04 20:16:41.428  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-06-04 20:16:42.051  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-06-04 20:16:42.051  INFO 2476 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-06-04 20:16:42.071  INFO 2476 --- [Thread-7] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-06-04 20:16:42.071  INFO 2476 --- [Thread-7] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-06-04 20:16:42.073  INFO 2476 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-06-04 20:16:42.073  INFO 2476 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-06-04 20:16:42.150  INFO 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : Starting ElasticsearchHotelRealizeDataSynchronizationApplication using Java 16.0.2 on mao with PID 2476 (H:\程序\大三下期\elasticsearch_hotel实现数据同步\target\classes started by mao in H:\程序\大三下期\elasticsearch_hotel实现数据同步)
+2022-06-04 20:16:42.150 DEBUG 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-04 20:16:42.150  INFO 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : The following 1 profile is active: "dev"
+2022-06-04 20:16:42.339  INFO 2476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-06-04 20:16:42.340  INFO 2476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-04 20:16:42.340  INFO 2476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-04 20:16:42.362  INFO 2476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-04 20:16:42.362  INFO 2476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 210 ms
+2022-06-04 20:16:42.376  INFO 2476 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-04 20:16:42.406  INFO 2476 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-06-04 20:16:42.512  INFO 2476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-06-04 20:16:42.569  INFO 2476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-04 20:16:42.594  INFO 2476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-06-04 20:16:42.594  INFO 2476 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-06-04 20:16:42.598  INFO 2476 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6f780697:0/SimpleConnection@6753cbcd [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62333]
+2022-06-04 20:16:42.599  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (hotel.exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-06-04 20:16:42.599  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.insert.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:16:42.599  INFO 2476 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hotel.delete.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-06-04 20:16:42.609  INFO 2476 --- [restartedMain] telRealizeDataSynchronizationApplication : Started ElasticsearchHotelRealizeDataSynchronizationApplication in 0.489 seconds (JVM running for 719.053)
+2022-06-04 20:16:42.610  INFO 2476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-04 20:16:50.991  INFO 2476 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-04 20:16:50.991  INFO 2476 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-04 20:16:50.991  INFO 2476 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-06-04 20:16:51.486 ERROR 2476 --- [http-nio-8089-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ElasticsearchStatusException[Elasticsearch exception [type=search_phase_execution_exception, reason=all shards failed]]] with root cause
+
+org.elasticsearch.ElasticsearchStatusException: Elasticsearch exception [type=search_phase_execution_exception, reason=all shards failed]
+	at org.elasticsearch.rest.BytesRestResponse.errorFromXContent(BytesRestResponse.java:178) ~[elasticsearch-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:2484) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.parseResponseException(RestHighLevelClient.java:2461) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2184) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:2137) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:2105) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at org.elasticsearch.client.RestHighLevelClient.search(RestHighLevelClient.java:1367) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+	at mao.elasticsearch_hotel.service.impl.HotelServiceImpl.search(HotelServiceImpl.java:102) ~[classes/:na]
+	at mao.elasticsearch_hotel.service.impl.HotelServiceImpl$$FastClassBySpringCGLIB$$4341a8c7.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.20.jar:5.3.20]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.20.jar:5.3.20]
+	at mao.elasticsearch_hotel.service.impl.HotelServiceImpl$$EnhancerBySpringCGLIB$$5a866f3b.search(<generated>) ~[classes/:na]
+	at mao.elasticsearch_hotel.controller.HotelController.search(HotelController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+	Suppressed: org.elasticsearch.client.ResponseException: method [POST], host [http://localhost:9200], URI [/hotel/_search?typed_keys=true&max_concurrent_shard_requests=5&search_type=query_then_fetch&batched_reduce_size=512], status line [HTTP/1.1 400 Bad Request]
+{"error":{"root_cause":[{"type":"query_shard_exception","reason":"No mapping found for [default] in order to sort on","index_uuid":"9Z8jajyDRYq-BECqfarWgA","index":"hotel"}],"type":"search_phase_execution_exception","reason":"all shards failed","phase":"query","grouped":true,"failed_shards":[{"shard":0,"index":"hotel","node":"QrII3Cg2Sh-RnBrmVzmV9Q","reason":{"type":"query_shard_exception","reason":"No mapping found for [default] in order to sort on","index_uuid":"9Z8jajyDRYq-BECqfarWgA","index":"hotel"}}]},"status":400}
+		at org.elasticsearch.client.RestClient.convertResponse(RestClient.java:346) ~[elasticsearch-rest-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestClient.performRequest(RestClient.java:312) ~[elasticsearch-rest-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestClient.performRequest(RestClient.java:287) ~[elasticsearch-rest-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2699) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+		at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2171) ~[elasticsearch-rest-high-level-client-7.17.3.jar:7.17.3]
+		... 61 common frames omitted
+

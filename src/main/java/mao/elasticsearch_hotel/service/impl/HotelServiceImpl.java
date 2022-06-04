@@ -81,6 +81,12 @@ public class HotelServiceImpl extends ServiceImpl<HotelMapper, Hotel> implements
             int page = params.getPage();
             int size = params.getSize();
             request.source().from((page - 1) * size).size(size);
+            //排序
+            String sortBy = params.getSortBy();
+            if (sortBy != null && !sortBy.equals("default"))
+            {
+                request.source().sort(sortBy, SortOrder.DESC);
+            }
             // 2.3.距离排序
             String location = params.getLocation();
             //判断距离信息是否为空
